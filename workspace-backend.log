@@ -1,0 +1,116 @@
+INFO:     Started server process [13452]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62190 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62190 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62229 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62190 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:44:16,066 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:44:17,835 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:44:19,528 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:44:21,270 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:62248 - "GET /api/jobs/266d01c435d64d88af90f54a82613729 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57780 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:44:30,497 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:59895 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:44:43,333 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:64089 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64089 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57770 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:44:48,516 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:44:48,555 | ERROR | app.services.jobs | Job failed: e66af1aebbce4adb8be6726d8ffe5b52
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\jobs.py", line 42, in _run_job
+    result = await self._agent.run(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\agent.py", line 58, in run
+    raise RuntimeError("The agent requested mesh generation but no image was provided.")
+RuntimeError: The agent requested mesh generation but no image was provided.
+2026-03-04 08:44:48,984 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:44:49,025 | ERROR | app.services.jobs | Job failed: abf178caa7364ae9b9dff702f3a702cf
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\jobs.py", line 42, in _run_job
+    result = await self._agent.run(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\agent.py", line 58, in run
+    raise RuntimeError("The agent requested mesh generation but no image was provided.")
+RuntimeError: The agent requested mesh generation but no image was provided.
+2026-03-04 08:44:50,521 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [21276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52151 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65359 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:47:42,625 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:65368 - "GET /api/jobs/713c3e9b5c4b4aad9587ddab41212dce HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52141 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52141 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:48:23,552 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 08:48:25,566 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61600 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:49:08,385 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [3792]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49680 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49316 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 08:59:17,614 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [7000]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58944 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 09:01:57,404 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [16124]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52119 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 09:03:29,354 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [6540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55319 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 09:12:10,942 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     Started server process [16612]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started server process [2756]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started server process [20924]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61421 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54896 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54896 - "GET /api/jobs/c902ec6095c54ec7bab70eaadc1f4654/events HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54898 - "GET /api/jobs/b6e60924d7774840b6d27722617db773 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54899 - "GET /api/jobs/b6e60924d7774840b6d27722617db773 HTTP/1.1" 200 OK
+2026-03-04 09:17:33,649 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:54901 - "GET /api/jobs/b6e60924d7774840b6d27722617db773 HTTP/1.1" 200 OK
+2026-03-04 09:17:35,149 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53637 - "GET /api/jobs/c902ec6095c54ec7bab70eaadc1f4654 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53638 - "GET /api/jobs/b6e60924d7774840b6d27722617db773 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "GET /api/jobs/b6e60924d7774840b6d27722617db773 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54238 - "POST /api/jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54238 - "GET /api/jobs/2cd80b1118294bd89b4f6f645d0634a9/events HTTP/1.1" 200 OK
+2026-03-04 09:18:21,107 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58697 - "GET /api/jobs/2cd80b1118294bd89b4f6f645d0634a9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53019 - "POST /api/jobs HTTP/1.1" 200 OK
+2026-03-04 09:21:12,242 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53022 - "GET /api/jobs/310f0b6e9535433d983bbcff1a3768f0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62215 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58261 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61468 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51101 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58081 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58081 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58081 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58081 - "GET /health HTTP/1.1" 200 OK

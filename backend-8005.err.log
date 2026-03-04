@@ -1,0 +1,60 @@
+INFO:     Started server process [956]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8005 (Press CTRL+C to quit)
+2026-03-04 00:11:35,609 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:11:36,685 | ERROR | app.services.jobs | Job failed: 789d2540639f4713b1fa5a32e5a0e9ae
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\jobs.py", line 42, in _run_job
+    result = await self._agent.run(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\agent.py", line 68, in run
+    result = await self._tools.blender_modify(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\tools.py", line 138, in blender_modify
+    results.append(await self._run_blender_code(material_code))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\tools.py", line 17, in _run_blender_code
+    return await self._mcp.call_tool("execute_blender_code", {"code": code})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\mcp.py", line 43, in call_tool
+    raise RuntimeError(stderr.decode("utf-8", errors="ignore").strip() or "MCP helper failed")
+RuntimeError: No such backend: trio
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\vendor\blender-mcp\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 198, in get_async_backend
+    return loaded_backends[asynclib_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'trio'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\vendor\blender-mcp\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 65, in run
+    async_backend = get_async_backend(backend)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\vendor\blender-mcp\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 200, in get_async_backend
+    module = import_module(f"anyio._backends._{asynclib_name}")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\gHOST\Downloads\New folder\vendor\blender-mcp\.venv\Lib\site-packages\anyio\_backends\_trio.py", line 38, in <module>
+    import trio.from_thread
+ModuleNotFoundError: No module named 'trio'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\scripts\mcp_tool_runner.py", line 49, in <module>
+    main()
+  File "C:\Users\gHOST\Downloads\New folder\scripts\mcp_tool_runner.py", line 34, in main
+    anyio.run(
+  File "C:\Users\gHOST\Downloads\New folder\vendor\blender-mcp\.venv\Lib\site-packages\anyio\_core\_eventloop.py", line 67, in run
+    raise LookupError(f"No such backend: {backend}") from exc
+LookupError: No such backend: trio

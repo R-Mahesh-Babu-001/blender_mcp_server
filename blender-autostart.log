@@ -1,0 +1,10 @@
+autostart begin
+blender addon socket started
+workspace boot spawned
+autostart complete
+autostart begin
+blender addon socket started
+workspace boot spawned
+autostart complete
+global blender_autostart.py disabled; use start-agentic-blender.cmd
+global blender_autostart.py disabled; use start-agentic-blender.cmd

@@ -1,0 +1,18 @@
+INFO:     Started server process [9172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8002 (Press CTRL+C to quit)
+2026-03-04 00:06:15,234 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:17,241 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:19,328 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:21,548 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:22,962 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:24,529 | INFO | httpx | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-03-04 00:06:24,547 | ERROR | app.services.jobs | Job failed: 0838ac550e2c4dd29ba9418578166042
+Traceback (most recent call last):
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\jobs.py", line 42, in _run_job
+    result = await self._agent.run(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gHOST\Downloads\New folder\backend\app\services\agent.py", line 77, in run
+    raise RuntimeError("Agent exceeded maximum number of steps without reaching finish.")
+RuntimeError: Agent exceeded maximum number of steps without reaching finish.

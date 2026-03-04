@@ -1,0 +1,10 @@
+backend/.venv/
+backend_runtime/
+backend/data/
+frontend/node_modules/
+frontend/dist/
+vendor/blender-mcp/.venv/
+vendor/InstantMesh/.venv/
+*.pyc
+__pycache__/
+.env
